@@ -29,7 +29,6 @@ public class TaskManagerApp {
                     break;
                 case 5:
                     System.out.println("Goodbye!");
-                    in.close();
                     return;
                 default:
                     System.out.println("Invalid option. Try again.");
@@ -58,7 +57,7 @@ public class TaskManagerApp {
     private static String readTask(Scanner sc) {
         System.out.print("Enter task name: ");
         sc.nextLine();
-        return sc.nextLine();
+        return sc.nextLine().trim();
     }
 
     private static int readNumber(Scanner sc, String prompt) {
