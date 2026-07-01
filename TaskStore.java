@@ -5,7 +5,7 @@ public class TaskStore {
 
   public void addTask(String name) {
     tasks.add(name);
-    System.out.println("Task" + name + "added.");
+    System.out.println("Task " + "'" +name +"'" + " added.");
   }
 
   public void removeTask(int num) {
